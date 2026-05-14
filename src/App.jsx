@@ -1,4 +1,3 @@
-import React from 'react'
 import { AppProvider } from './state/AppContext'
 import { DragProvider, ModalProvider, ToastProvider } from './state/UIContext'
 import Toolbar       from './components/Toolbar'
@@ -27,6 +26,9 @@ export default function App() {
           </ToastProvider>
         </ModalProvider>
       </DragProvider>
+      <footer className="app-footer">
+        <span>Built with love ❤️ by Lucacri</span>
+      </footer>
     </AppProvider>
   )
 }
